@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+
+body {
+    background-image: radial-gradient( #eabff0,#c962c8,#87277c);
+    min-height: 100vh;
+}
+
+.container-video{
+    background-image: radial-gradient( #100f10,#393139,#635f63);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* nav */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav .menu-icon {
+    cursor: pointer;
+    display: none;
+}
+
+nav .logo a{
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #df049e;
+    text-decoration: none;
+}
+
+
+nav .logo-video{
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #11b48c;
+    text-decoration: none;}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0 .9375rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.0625rem;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.button  {
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    padding: .625rem 1.25rem;
+    border-radius: 5px;
+    font-size: 1.0625rem;
+    letter-spacing: .0625rem;
+    margin-left: 1.25rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.button-video{
+    background-color: #9c24cc;
+}
+
+/* main */
+
+main {
+    margin-top:  1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* textos */
+
+.text-bx {
+    width: 40%;
+   
+    margin-left: 5em;
+}
+
+.text-bx h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #9c24cc;
+   
+}
+
+.text-bx h1 b {
+    color: #d218cc;
+}
+
+
+.text-bx p {
+   color: #000000;
+   font-weight: 400;
+   margin-top: 1.25rem; 
+   
+}
+
+.text-bx-video p {
+    color: #ffffff;
+    
+ }
+
+.text-bx .input-box {
+    margin: 1.25rem 0;
+    display: flex;
+}
+.text-bx .input-box input {
+    width: 60%;
+    display: block;
+    height: 3.125rem;
+    padding: .625rem;
+    border: none;
+    outline: none;
+    color: #dbd0d0;
+    font-size: 1rem;
+}
+
+.text-bx .input-box input::placeholder {
+   color: #000000; 
+}
+
+.text-bx .input-box button {
+    outline: none;
+    background-color: #130909;
+    padding: .625rem 1.25rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: .9375rem;
+}
+
+/* midias sociais */
+
+.medias-sociais{
+    margin: 5em 0;
+}
+.medias-sociais i {
+    font-size: 1.4375rem;
+    
+   
+    color: #fff;
+    padding: .4375rem;
+    border-radius: 5px;
+    margin: 0 .1875rem;
+}
+
+/* Imagem */
+
+.img-bx {
+    width: 60%;
+   margin-left: 10em;
+  
+    
+}
+
+.img-bx img {
+    height: 80vh;
+   
+}
+
+.img-bx iframe{
+    height: 70vh;
+}
+
+.fa-facebook{
+    background-color:#3b5998 ;
+}
+.fa-twitter{
+    background-color: #00aced;
+}
+.fa-instagram{
+    background-color: #DD2A7B;
+}
+.fa-whatsapp{
+    background-color: #0eaa3c;
+}
+.fa-youtube-play{
+    background-color: #da1919;
+}
+
+/* Tela menor que 970px */
+
+@media (max-width:970px){
+    
+
+    nav .menu-icon{
+        display: block;
+    }
+
+    nav ul {
+        /* border: 1px#c2266cred; */
+        position: fixed;
+        width: 60%;
+        height: 100%;
+        top: 0; left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: 0.3s ease-in;
+        background: #c71081;
+        transform: translateX(-100%);
+    }
+
+    .active {
+        transform: translateX(0);
+    }
+
+    nav ul li {
+        padding: .625rem;
+    }
+
+    nav ul li a {
+        color: #fff;
+        font-size: 1.125rem;
+    }
+
+    nav ul button {
+        background-color: #0d0203;
+        font-size: 1.125rem;
+        margin: .625rem;
+    }
+
+
+  
+
+    /* texto e imagens juntos */
+
+    main {
+        flex-direction: column;
+    }
+
+    .text-bx,
+    .img-bx {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-bx {
+        margin-bottom: 2.5rem;
+    }
+    
+    .text-bx .input-box {
+        justify-content: center;
+    }
+
+    html{
+        background: url(imagens/CATAZ CYBERBULLYING. PNG.png);
+       
+    }
+}
